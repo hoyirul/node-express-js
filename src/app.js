@@ -5,6 +5,7 @@ const app = express();
 const PORT = 3000;
 
 app.use(middleware.logRequest);
+app.use(express.json());
 app.use('/', route);
 
 app.listen(PORT, () => {
